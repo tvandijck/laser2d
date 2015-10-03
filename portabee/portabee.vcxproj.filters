@@ -78,9 +78,6 @@
     <ClInclude Include="src\watchdog.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\boards.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\cardreader.h">
       <Filter>Source Files</Filter>
     </ClInclude>

@@ -32,31 +32,15 @@
 
 #define PROTOCOL_VERSION "1.0"
 
-#if MB(ULTIMAKER)|| MB(ULTIMAKER_OLD)|| MB(ULTIMAIN_2)
-  #define MACHINE_NAME "Ultimaker"
-  #define FIRMWARE_URL "http://firmware.ultimaker.com"
-#elif MB(RUMBA)
-  #define MACHINE_NAME "Rumba"
-  #define FIRMWARE_URL "https://github.com/MarlinFirmware/Marlin"
-#elif MB(3DRAG)
-  #define MACHINE_NAME "3Drag"
-  #define FIRMWARE_URL "http://3dprint.elettronicain.it/"
-#elif MB(5DPRINT)
-  #define MACHINE_NAME "Makibox"
-  #define FIRMWARE_URL "https://github.com/MarlinFirmware/Marlin"
-#elif MB(SAV_MKI)
-  #define MACHINE_NAME "SAV MkI"
-  #define FIRMWARE_URL "https://github.com/fmalpartida/Marlin/tree/SAV-MkI-config"
-#else
-  #ifdef CUSTOM_MENDEL_NAME
+#ifdef CUSTOM_MENDEL_NAME
     #define MACHINE_NAME CUSTOM_MENDEL_NAME
-  #else
+#else
     #define MACHINE_NAME "Mendel"
-  #endif
+#endif
 
 // Default firmware set to Mendel
-  #define FIRMWARE_URL "https://github.com/MarlinFirmware/Marlin"
-#endif
+#define FIRMWARE_URL "https://github.com/MarlinFirmware/Marlin"
+
 
 
 #ifndef MACHINE_UUID
@@ -153,6 +137,6 @@
 
 // LCD Menu Messages
 
-#include LANGUAGE_INCLUDE
+//#include LANGUAGE_INCLUDE
 
 #endif //__LANGUAGE_H

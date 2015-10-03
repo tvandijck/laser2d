@@ -5,6 +5,7 @@
 
 void Config_ResetDefault();
 
+#define DISABLE_M503
 #ifndef DISABLE_M503
 void Config_PrintSettings();
 #else

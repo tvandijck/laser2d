@@ -79,7 +79,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\boards.h" />
     <ClInclude Include="src\cardreader.h" />
     <ClInclude Include="src\Configuration.h" />
     <ClInclude Include="src\ConfigurationStore.h" />
